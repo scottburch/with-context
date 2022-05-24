@@ -1,7 +1,8 @@
 {
   "name": "@scottburch/with-context",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/with-context.js",
+  "types": "lib/with-context.d.ts",
   "repository": {
     "url": "https://github.com/scottburch/with-context.git"
   },
