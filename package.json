@@ -1,7 +1,10 @@
 {
   "name": "@scottburch/with-context",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/with-context.js",
+  "repository": {
+    "url": "https://github.com/scottburch/with-context.git"
+  },
   "license": "MIT",
   "dependencies": {
     "@types/chai": "^4.2.22",
