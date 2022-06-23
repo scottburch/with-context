@@ -25,6 +25,10 @@ describe('with-context', () => {
         Some({a: 1})
             .map(withCtx('b', ctx => ctx.a + 1))
             .map(withCtx('c', ctx => ctx.b.toString()))
-            .forEach(x => expect(x).to.deep.equal({a: 1, b: 2, c: "2"}))
+            .forEach(x => expect(x).to.deep.equal({a: 1, b: 2, c: "2"}));
+
+        return Promise.resolve({a: 1})
+            .then(withCtxAwait('b', () => 2))
+            .then(x => expect(x).to.deep.equal({a: 1, b: 2}));
     });
 });
