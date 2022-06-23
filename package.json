@@ -1,6 +1,6 @@
 {
   "name": "@scottburch/with-context",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "lib/with-context.js",
   "types": "lib/with-context.d.ts",
   "repository": {
