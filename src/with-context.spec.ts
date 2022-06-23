@@ -29,6 +29,7 @@ describe('with-context', () => {
 
         return Promise.resolve({a: 1})
             .then(withCtxAwait('b', () => 2))
-            .then(x => expect(x).to.deep.equal({a: 1, b: 2}));
+            .then(withCtxAwait('c', () => Promise.resolve(3)))
+            .then(x => expect(x).to.deep.equal({a: 1, b: 2, c: 3}));
     });
 });
